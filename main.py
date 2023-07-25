@@ -3,7 +3,7 @@ import io
 import pandas as pd
 import matplotlib.pyplot as plt
 def main():
-        st.title("Algoritmo de Regresión Lineal")
+        st.title("  Algoritmo de Regresión Lineal")
 
         # Cargar el archivo CSV desde el mismo directorio que main.py
         archivo_csv = "registro.csv"  # Reemplaza "registro.csv" con el nombre real de tu archivo CSV
