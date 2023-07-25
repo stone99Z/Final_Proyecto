@@ -3,7 +3,7 @@ import io
 import pandas as pd
 import matplotlib.pyplot as plt
 def main():
-        st.title("  Análisis dataSec - Machine Learning")
+        st.title(" Análisis dataSec - Machine Learning")
 
         # Cargar el archivo CSV desde el mismo directorio que main.py
         archivo_csv = "registro.csv" 
