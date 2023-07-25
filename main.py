@@ -114,7 +114,7 @@ def main():
         error_rf = np.sqrt(mean_squared_error(etiquetas_test, predicciones_rf))
         st.write("Error porcentual (Random Forest):", error_rf * 100)
 
-
+        from sklearn.ensemble import GradientBoostingRegressor
         modelo_gb = GradientBoostingRegressor()
         modelo_gb.fit(datos_entrenamiento, etiquetas_entrenamiento)
 
