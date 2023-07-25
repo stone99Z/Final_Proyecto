@@ -79,7 +79,7 @@ def main():
         st.write("Datos de test sin columna 'CANT. DE PARTICIPANTES':")
         st.write(datos_test)
         
-          # FASE 3. PREDICCIONES
+        
         st.write("FASE 3. PREDICCIONES")
 
 
@@ -100,7 +100,7 @@ def main():
 
 
 
-      
+        # FASE 3. PREDICCIONES
         from sklearn.ensemble import RandomForestRegressor
         
         modelo_rf = RandomForestRegressor()
@@ -113,8 +113,6 @@ def main():
         # Calculamos el margen de error en la predicción de la CANT. DE PARTICIPANTES
         error_rf = np.sqrt(mean_squared_error(etiquetas_test, predicciones_rf))
         st.write("Error porcentual (Random Forest):", error_rf * 100)
-
-   
 
 if __name__ == "__main__":
     main()
