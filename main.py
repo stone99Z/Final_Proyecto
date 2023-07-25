@@ -3,15 +3,15 @@ import io
 import pandas as pd
 import matplotlib.pyplot as plt
 def main():
-        st.title("  Algoritmo de Regresión Lineal")
+        st.title("  Análisis dataSec - Machine Learning")
 
         # Cargar el archivo CSV desde el mismo directorio que main.py
-        archivo_csv = "registro.csv"  # Reemplaza "registro.csv" con el nombre real de tu archivo CSV
+        archivo_csv = "registro.csv" 
         datos_sec = pd.read_csv(archivo_csv, encoding='latin-1', on_bad_lines='skip')
         st.write("Datos cargados:")
         st.write(datos_sec)
 
-        # Realiza las visualizaciones de datos y gráficos
+        # Realizar las visualizaciones de datos y gráficos
         st.write("Aqui podremos saber cuantos datos no existentes o espacios vacios hay por columna:")
         st.write(datos_sec.isna().sum())
         
@@ -27,7 +27,7 @@ def main():
         st.write("Datos limpios sin columnas irrelevantes:")
         st.write(datos_sec)
         
-        # Realiza las visualizaciones de datos y gráficos
+        # Realizar las visualizaciones de datos y gráficos
         st.write("Podemos visualizar datos específicos:")
         st.write(datos_sec["FEMENINO"])
         
